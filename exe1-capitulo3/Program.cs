@@ -6,7 +6,8 @@ namespace exe1_capitulo3
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
+            //Exercício 18 - Saída de dados - Secção 3
             string produto1 = "Computador";
             string produto2 = "Mesa de escritório";
 
