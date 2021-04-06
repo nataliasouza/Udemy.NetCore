@@ -17,7 +17,7 @@ namespace parImpar
                 Console.WriteLine("É impar");
             }
 
-            Console.WriteLine("Qual a hora atual? ");
+            /*Console.WriteLine("Qual a hora atual? ");
             int hora = int.Parse(Console.ReadLine());
 
             if (hora < 12)
@@ -31,7 +31,7 @@ namespace parImpar
             else
             {
                 Console.WriteLine("Boa noite");
-            }
+            }*/
         }
     }
 }
