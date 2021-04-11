@@ -1,0 +1,16 @@
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.exe
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.deps.json
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.runtimeconfig.json
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.runtimeconfig.dev.json
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.dll
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\ref\CrescenteDecrescente.dll
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\bin\Debug\net5.0\CrescenteDecrescente.pdb
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.csprojAssemblyReference.cache
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.AssemblyInfoInputs.cache
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.AssemblyInfo.cs
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.csproj.CoreCompileInputs.cache
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.dll
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\ref\CrescenteDecrescente.dll
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.pdb
+C:\Users\natal\Desktop\Udemy.NetCore\CrescenteDecrescente\CrescenteDecrescente\obj\Debug\net5.0\CrescenteDecrescente.genruntimeconfig.cache
