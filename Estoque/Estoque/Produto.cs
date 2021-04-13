@@ -15,13 +15,18 @@ namespace Estoque
 
         public void AdicionarProdutos(int quantidade)
         {
-            Quantidade += Quantidade;
+            Quantidade += quantidade;
+        }
+
+        public void RemoverProdutos (int quantidade)
+        {
+            Quantidade -= quantidade;
         }
 
         //sobreposição 
         public override string ToString()
         {
-            return Nome + " , R$ " + Preco.ToString("F2", CultureInfo.InvariantCulture)
+            return Nome + ", R$ " + Preco.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
                 + Quantidade
                 + " unidades, Total: R$ "
