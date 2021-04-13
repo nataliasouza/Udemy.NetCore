@@ -13,13 +13,18 @@ namespace Estoque
             return Preco * Quantidade;
         }
 
+        public void AdicionarProdutos(int quantidade)
+        {
+            Quantidade += Quantidade;
+        }
+
         //sobreposição 
         public override string ToString()
         {
-            return Nome + " , $ " + Preco.ToString("F2", CultureInfo.InvariantCulture)
+            return Nome + " , R$ " + Preco.ToString("F2", CultureInfo.InvariantCulture)
                 + ", "
                 + Quantidade
-                + " unidades, Total: $ "
+                + " unidades, Total: R$ "
                 + ValorTotalEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
     }

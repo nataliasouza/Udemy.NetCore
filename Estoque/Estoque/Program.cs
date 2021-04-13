@@ -20,6 +20,13 @@ namespace Estoque
             p.Quantidade = int.Parse(Console.ReadLine());
 
             Console.Write("Dados do produto: " + p);
+
+            Console.WriteLine();
+            Console.WriteLine("Digite o número de produtos a serem adicionados: ");
+            int qtd = int.Parse(Console.ReadLine());
+
+            p.AdicionarProdutos(qtd);
+            Console.WriteLine("Dados Atualizados");
         }
     }
 }
