@@ -7,6 +7,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Conta Bancária - Recapitulando Lógica de Programação", ContaBancaria.Executar},               
                 {"Placeholders, concatenação e interpolação - Recapitulando Lógica de Programação", Concatenacao.Executar},               
                 {"Exercício de Fixação 01 - Recapitulando Lógica de Programação", ExeFixacao01.Executar},               
+                {"Bhaskara - Recapitulando Lógica de Programação", bhaskara.Executar}              
                                              
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
