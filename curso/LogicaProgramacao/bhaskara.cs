@@ -1,7 +1,7 @@
 ﻿
 namespace curso.LogicaProgramacao
 {
-    public class bhaskara
+    public class Bhaskara
     {
         public static void Executar()
         {
