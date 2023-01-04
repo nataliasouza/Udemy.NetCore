@@ -18,13 +18,14 @@ namespace curso.LogicaProgramacao
             Console.WriteLine(c3);
             Console.WriteLine(c4);
 
-            Console.WriteLine("-----------");
+            Console.WriteLine("\n----------\n");
 
             bool c5 = a <= 10;
             bool c6 = a >= 10;
             bool c7 = a == 10;
             bool c8 = a != 10;
 
+            
             Console.WriteLine(c5);
             Console.WriteLine(c6);
             Console.WriteLine(c7);
