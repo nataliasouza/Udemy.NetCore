@@ -1,5 +1,4 @@
-﻿
-using curso.LogicaProgramacao;
+﻿using curso.LogicaProgramacao;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 
@@ -10,7 +9,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Bhaskara - Recapitulando Lógica de Programação", Bhaskara.Executar},              
                 {"Split - Recapitulando Lógica de Programação", SplitPalavras.Executar},             
                 {"Split Parte 2 - Recapitulando Lógica de Programação", SplitParte2.Executar},            
-                {"Ímpar ou par - Recapitulando Lógica de Programação", ImparPar.Executar}             
+                {"Ímpar ou par - Recapitulando Lógica de Programação", ImparPar.Executar},
+                {"Operadores Comparativos - Recapitulando Lógica de Programação", OpComparativos.Executar}
                                              
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
