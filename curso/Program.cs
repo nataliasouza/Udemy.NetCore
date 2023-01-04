@@ -12,7 +12,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Ímpar ou par - Recapitulando Lógica de Programação", ImparPar.Executar},
                 {"Operadores Comparativos - Recapitulando Lógica de Programação", OpComparativos.Executar},
                 {"Operadores Lógicos - Recapitulando Lógica de Programação", OpLogicos.Executar},
-                {"Estrutura Condicional - if/else - Recapitulando Lógica de Programação", EstruturaCondicional.Executar}
+                {"Estrutura Condicional - if/else - Recapitulando Lógica de Programação", EstruturaCondicional.Executar},
+                {"Estrutura Condicional (ESCOPO) - if/else - Recapitulando Lógica de Programação", Desconto.Executar}
                                              
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
