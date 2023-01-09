@@ -1,4 +1,5 @@
 ﻿using curso.LogicaProgramacao;
+using curso.LogicaProgramacao.ExerciciosPropostos;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 
@@ -13,7 +14,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Operadores Comparativos - Recapitulando Lógica de Programação", OpComparativos.Executar},
                 {"Operadores Lógicos - Recapitulando Lógica de Programação", OpLogicos.Executar},
                 {"Estrutura Condicional - if/else - Recapitulando Lógica de Programação", EstruturaCondicional.Executar},
-                {"Estrutura Condicional (ESCOPO) - if/else - Recapitulando Lógica de Programação", Desconto.Executar}
+                {"Estrutura Condicional (ESCOPO) - if/else - Recapitulando Lógica de Programação", Desconto.Executar},
+                {"Exercícios Propostos Parte 2 - if/else - Recapitulando Lógica de Programação", Exercicio01.Executar}
                                              
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
