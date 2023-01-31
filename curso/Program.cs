@@ -19,7 +19,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercícios Propostos Parte 2 - uri1044 - São Multiplos?", Exercicio03.Executar},
                 {"Exercícios Propostos Parte 2 - uri1046 - Duração do Jogo", Exercicio04.Executar},
                 {"Exercícios Propostos Parte 2 - uri1038 - Exercício 5 - minha versão", Exercicio05.Executar},
-                {"Exercícios Propostos Parte 2 - uri1037 - Exercício 6", Exercicio06.Executar}
+                {"Exercícios Propostos Parte 2 - uri1037 - Exercício 6", Exercicio06.Executar},
+                {"Exercícios Propostos Parte 2 - uri1041 - Exercício 7", Exercicio07.Executar}
                                              
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
