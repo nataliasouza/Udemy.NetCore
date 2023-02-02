@@ -1,5 +1,9 @@
-﻿
-using System.Collections.Generic;
+﻿//Com base na tabela abaixo, escreva um programa que leia o código de um item e a quantidade deste item.
+//A seguir, calcule e mostre o valor da conta a pagar.
+
+//ENTRADA ------------------------------------- SAIDA
+//3 2 ------------------------------------- Total R$ 10.00
+//2 3 ------------------------------------- Total R$ 13.50
 
 namespace curso.LogicaProgramacao.ExerciciosPropostos
 {
