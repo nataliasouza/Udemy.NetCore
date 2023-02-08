@@ -12,6 +12,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Split - Recapitulando Lógica de Programação", SplitPalavras.Executar},             
                 {"Split Parte 2 - Recapitulando Lógica de Programação", SplitParte2.Executar},
                 {"Estrutura Sequencial - Exercicio Fixacao", ExercicioFixacaoSequencial.Executar},
+                {"Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1003", Sequencial01.Executar},
                 {"Ímpar ou par - Recapitulando Lógica de Programação", ImparPar.Executar},
                 {"Operadores Comparativos - Recapitulando Lógica de Programação", OpComparativos.Executar},
                 {"Operadores Lógicos - Recapitulando Lógica de Programação", OpLogicos.Executar},
