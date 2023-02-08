@@ -8,7 +8,7 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial
     {
         public static void Executar()
         {
-            Console.WriteLine("Digite 4 valores separandos com espaço e na mesma linha");
+            Console.Write("Digite 4 valores separandos com espaço e na mesma linha: ");
             string[] valores = Console.ReadLine().Split(' ');
 
             int valor1 = int.Parse(valores[0]);
@@ -18,7 +18,7 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial
 
             double resultado = valor1 * valor2 - valor3 * valor4;
 
-            Console.WriteLine("Diferença" + resultado);
+            Console.WriteLine("\nDiferença: " + resultado);
         }
     }
 }
