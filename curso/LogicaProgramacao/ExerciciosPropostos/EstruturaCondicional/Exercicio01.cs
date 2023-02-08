@@ -2,7 +2,7 @@
 //Fazer um programa para ler um número inteiro, e depois dizer 
 //se este número é negativo ou não.
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio01
     {

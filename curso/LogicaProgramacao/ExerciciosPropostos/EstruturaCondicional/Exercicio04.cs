@@ -3,7 +3,7 @@
 //sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima
 //de 1 hora e máxima de 24 horas.
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
      public class Exercicio04
     {

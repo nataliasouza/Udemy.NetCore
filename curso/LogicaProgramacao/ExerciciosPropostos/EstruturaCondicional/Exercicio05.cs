@@ -5,7 +5,7 @@
 //3 2 ------------------------------------- Total R$ 10.00
 //2 3 ------------------------------------- Total R$ 13.50
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio05
     {

@@ -5,7 +5,7 @@
 
 using System.Globalization;
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio06
     {
@@ -38,6 +38,6 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos
                 Console.WriteLine("Intervalo entre (75,100]");
             }
 
-        } 
+        }
     }
 }

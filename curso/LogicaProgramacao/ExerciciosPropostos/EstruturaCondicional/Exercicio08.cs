@@ -23,7 +23,7 @@
 
 using System.Globalization;
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio08
     {
@@ -33,7 +33,7 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos
             Console.BackgroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("========== Calculo do Imposto de Renda =========");
             Console.Write("Digite o valor do seu salário R$: ");
-   
+
             double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
@@ -58,7 +58,7 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos
             if (imposto == 0.0)
             {
                 Console.Clear();
-               
+
                 Console.WriteLine("========== Calculo do Imposto de Renda =========");
                 Console.WriteLine("\nValor do seu salário: " + salario);
                 Console.WriteLine("O valor do Imposto de Renda a pagar R$: Isento");
@@ -68,14 +68,14 @@ namespace curso.LogicaProgramacao.ExerciciosPropostos
             }
             else
             {
-                Console.Clear();                
+                Console.Clear();
                 Console.WriteLine("========= Calculo do Imposto de Renda ==========");
                 Console.WriteLine("\nValor do seu salário: " + salario);
                 Console.WriteLine("O valor do Imposto de Renda a pagar R$:  "
                     + imposto.ToString("F2", CultureInfo.InvariantCulture));
                 Console.WriteLine("\n===============================================");
 
-                Console.ReadKey();  
+                Console.ReadKey();
             }
         }
     }

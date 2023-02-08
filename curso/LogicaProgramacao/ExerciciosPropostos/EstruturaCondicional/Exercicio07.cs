@@ -5,7 +5,7 @@
 
 using System.Globalization;
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio07
     {

@@ -3,7 +3,7 @@
 //ou "Não são multiplos", indicando se os valores lidos são multiplos entre si.
 //ATENÇÃO: os números devem poder ser digitados em ordem crescente ou decrescente.
 
-namespace curso.LogicaProgramacao.ExerciciosPropostos
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional
 {
     public class Exercicio03
     {
