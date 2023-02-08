@@ -16,6 +16,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1002 - Exercício 2", Sequencial02.Executar},
                 {"Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1007 - Exercício 3", Sequencial03.Executar},
                 {"Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1008 - Exercício 4", Sequencial04.Executar},
+                {"Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1010 - Exercício 5", Sequencial05.Executar},
                 {"Ímpar ou par - Recapitulando Lógica de Programação", ImparPar.Executar},
                 {"Operadores Comparativos - Recapitulando Lógica de Programação", OpComparativos.Executar},
                 {"Operadores Lógicos - Recapitulando Lógica de Programação", OpLogicos.Executar},
