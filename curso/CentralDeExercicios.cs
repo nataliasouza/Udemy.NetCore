@@ -17,13 +17,14 @@ public class CentralDeExercicios
             Console.WriteLine("{0}) {1}", i, exercicio.Key);
             i++;
         }
-
+        
         Console.Write("\n Digite o número (ou vazio para o último)? ");
 
         int.TryParse(Console.ReadLine(), out int num);
         bool numValido = num > 0 && num <= Exercicios.Count;
         num = numValido ? num - 1 : Exercicios.Count - 1;
 
+        Console.Clear();
         string nomeDoExercicio = Exercicios.ElementAt(num).Key;
 
         Console.Write("\nExecutando exercício ");
