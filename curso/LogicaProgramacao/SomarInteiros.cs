@@ -15,9 +15,9 @@ namespace curso.LogicaProgramacao
             int quantidadeNumeros = int.Parse(Console.ReadLine());
             Console.Clear();
 
-            for(int i = 0; i < quantidadeNumeros; i++)
+            for(int i = 1; i <= quantidadeNumeros; i++)
             {
-                Console.Write($"Digite o {i + 1} valor: ");
+                Console.Write($"Digite o {i} valor: ");
                 valorDigitado = int.Parse(Console.ReadLine());
                 valorTotal += valorDigitado;
             }
