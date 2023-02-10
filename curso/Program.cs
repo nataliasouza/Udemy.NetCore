@@ -34,7 +34,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício Funcoes - Exercício Qual Maior Número", Funcoes.Executar},
                 {"Exercício Raiz Quadrada - WHILE", RaizQuadrada.Executar},
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1114 - Exercício 1", Repetitiva01.Executar},
-                {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1115 - Exercício 2", Repetitiva02.Executar}
+                {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1115 - Exercício 2", Repetitiva02.Executar},
+                {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1115 - Exercício 3", Repetitiva03.Executar},
                                         
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
