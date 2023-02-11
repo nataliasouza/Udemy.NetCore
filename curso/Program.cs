@@ -1,6 +1,7 @@
 ﻿using curso.LogicaProgramacao;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitiva;
+using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -36,7 +37,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1114 - Exercício 1", Repetitiva01.Executar},
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1115 - Exercício 2", Repetitiva02.Executar},
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1134 - Exercício 3", Repetitiva03.Executar},
-                {"Exercício Estrutura Repetitiva FOR - Recapitulando Lógica de Programação - Exercício Somar Inteiros", SomarInteiros.Executar}
+                {"Exercício Estrutura Repetitiva FOR - Recapitulando Lógica de Programação - Exercício Somar Inteiros", SomarInteiros.Executar},
+                {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1067 - Exercício 1", RepetitivaFor01.Executar},
                                         
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
