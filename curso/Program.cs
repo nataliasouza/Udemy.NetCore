@@ -41,6 +41,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1067 - Exercício 1", RepetitivaFor01.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1072 - Exercício 2", RepetitivaFor02.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1079 - Exercício 3", RepetitivaFor03.Executar},
+                {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1116 - Exercício 4", RepetitivaFor04.Executar}
                                         
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
