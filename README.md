@@ -1,7 +1,7 @@
 # Curso C# Completo - Programação Orientada a Objetos + Projetos
 <img src="https://img.shields.io/static/v1?label=Nelio Alves&message=UDEMY&color=7159c1&style=for-the-badge"/>
 
-:spiral_calendar: Atualizado em 11 de fevereiro de 2023
+:spiral_calendar: Atualizado em 13 de fevereiro de 2023
 
 :construction: O projeto está em desenvolvimento :construction:<br>
 
@@ -21,9 +21,9 @@ Seção 1. Apresentação do curso e orientações.
 
 Seção 2. Introdução a C# e .Net.
 
-Seção 3. Recapitulação de Lógica de Programação. :warning: Estou aqui! :warning:
+Seção 3. Recapitulação de Lógica de Programação. 
 
-Seção 4. Classes, atributos, Métodos, Membros Estáticos.
+Seção 4. Classes, atributos, Métodos, Membros Estáticos. :warning: Estou aqui! :warning:
 
 Seção 5. Construtores, Palavra This, Sobrecarga, Encapsulamento.
 
