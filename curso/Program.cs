@@ -3,10 +3,11 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaCondicional;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitiva;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
+using curso.POO;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 
-                //LÓGICA DE PROGRAMAÇÃO
+                //UNIDADE 1 - RECAPITULANDO LÓGICA DE PROGRAMAÇÃO
                 {"Exercício Conta Bancária - Recapitulando Lógica de Programação", ContaBancaria.Executar},               
                 {"Exercício Placeholders, concatenação e interpolação - Recapitulando Lógica de Programação", Concatenacao.Executar},               
                 {"Exercício de Fixação 01 - Recapitulando Lógica de Programação", ExeFixacao01.Executar},               
@@ -25,14 +26,14 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício Operadores Lógicos - Recapitulando Lógica de Programação", OpLogicos.Executar},
                 {"- Estrutura Condicional - if/else - Recapitulando Lógica de Programação", EstruturaCondicional.Executar},
                 {"- Estrutura Condicional (ESCOPO) - if/else - Recapitulando Lógica de Programação", Desconto.Executar},
-                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - if/else - Número Negativo?", Exercicio01.Executar},
-                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1044 - São Multiplos?", Exercicio03.Executar},
-                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1046 - Duração do Jogo", Exercicio04.Executar},
+                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - if/else - Exercício 1 - Número Negativo?", Exercicio01.Executar},
+                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1044 - Exercício 3 - São Multiplos?", Exercicio03.Executar},
+                {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1046 - Exercício 4 - Duração do Jogo", Exercicio04.Executar},
                 {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1038 - Exercício 5 - minha versão", Exercicio05.Executar},
                 {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1037 - Exercício 6", Exercicio06.Executar},
                 {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1041 - Exercício 7", Exercicio07.Executar},
                 {"- Estrutura Condicional - Exercícios Propostos Parte 2 - uri1051 - Exercício 8", Exercicio08.Executar},
-                {"Exercício Funcoes - Exercício Qual Maior Número", Funcoes.Executar},
+                {"Exercício Funções - Exercício Qual Maior Número", Funcoes.Executar},
                 {"Exercício Estrutura Repetitiva WHILE - Recapitulando Lógica de Programação - Exercício Raiz Quadrada", RaizQuadrada.Executar},
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1114 - Exercício 1", Repetitiva01.Executar},
                 {"- Estrutura Repetitiva WHILE - Exercícios Propostos Parte 3 - uri1115 - Exercício 2", Repetitiva02.Executar},
@@ -43,11 +44,12 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1079 - Exercício 3", RepetitivaFor03.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1116 - Exercício 4", RepetitivaFor04.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1153 - Exercício 5", RepetitivaFor05.Executar},
-                {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1157 - Exercício 6", RepetitivaFor06.Executar}
+                {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1157 - Exercício 6", RepetitivaFor06.Executar},
+                {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1143 - Exercício 7", RepetitivaFor07.Executar},
                                         
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
-                //{"Membros - Classes e Métodos", Membros.Executar},
+                {"Exercício - Resolvendo um problema sem orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
                
             });
 
