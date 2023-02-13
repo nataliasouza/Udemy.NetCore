@@ -4,6 +4,7 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitiva;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 using curso.POO;
+using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 
@@ -49,7 +50,9 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                                         
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETO
-                {"Exercício - Resolvendo um problema sem orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
+                {"Exercício - Resolvendo um problema SEM orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
+                {"Exercício - Resolvendo um problema COM orientação a objetos - Calcular área de um triângulo", Triangulo.Executar},
+                {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar}
                
             });
 
