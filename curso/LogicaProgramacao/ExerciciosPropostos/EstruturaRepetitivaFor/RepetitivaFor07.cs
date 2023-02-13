@@ -1,0 +1,27 @@
+﻿//Fazer um programa para ler um número inteiro positivo N. O programa deve então
+//mostrar na tela N linhas, começando de 1 até N. Para cada linha, mostrar o número
+//da linha, depois o quadrado e o cubo do valor, conforme exemplo.
+
+namespace curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor
+{
+    public static class RepetitivaFor07
+    {
+        public static void Executar()
+        {
+            Console.Write("Digite um número: ");
+            int n = int.Parse(Console.ReadLine());
+
+            for (int i = 1; i <= n; i++)
+            {
+
+                int numero = i;
+                int quadrado = i * i;
+                int cubo = i * i * i;
+
+                Console.WriteLine($"\nNúmero: {numero} " +
+                    $"Quadrado: {quadrado} " +
+                    $"Cubo: {cubo}");
+            }
+        }
+    }
+}
