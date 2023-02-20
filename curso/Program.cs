@@ -8,6 +8,8 @@ using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 
+                #region "Lógica de Programação"
+    
                 //UNIDADE 1 - RECAPITULANDO LÓGICA DE PROGRAMAÇÃO
                 {"Exercício Conta Bancária - Recapitulando Lógica de Programação", ContaBancaria.Executar},               
                 {"Exercício Placeholders, concatenação e interpolação - Recapitulando Lógica de Programação", Concatenacao.Executar},               
@@ -47,15 +49,19 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1153 - Exercício 5", RepetitivaFor05.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1157 - Exercício 6", RepetitivaFor06.Executar},
                 {"- Estrutura Repetitiva FOR - Exercícios Propostos Parte 4 - uri1143 - Exercício 7", RepetitivaFor07.Executar},
-                                        
 
-                // PROGRAMAÇÃO ORIENTADA A OBJETO
+                #endregion
+                                        
+                #region "Programação Orientada a Objetos"
+
+                // PROGRAMAÇÃO ORIENTADA A OBJETOS
                 {"Exercício - Resolvendo um problema SEM orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
                 {"Exercício - Resolvendo um problema COM orientação a objetos - Calcular área de um triângulo", Triangulo.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar},
                 {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
-
+                
+                #endregion
             });
 
 central.SelecionarEExecutar();
