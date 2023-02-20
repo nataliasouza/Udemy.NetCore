@@ -53,8 +53,9 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Resolvendo um problema SEM orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
                 {"Exercício - Resolvendo um problema COM orientação a objetos - Calcular área de um triângulo", Triangulo.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
-                {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar}
-               
+                {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar},
+                {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
+
             });
 
 central.SelecionarEExecutar();
