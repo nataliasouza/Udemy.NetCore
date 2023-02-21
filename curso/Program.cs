@@ -60,6 +60,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar},
                 {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
+                {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto", Produto.Executar},
                 
                 #endregion
             });
