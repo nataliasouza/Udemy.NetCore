@@ -33,13 +33,21 @@ namespace curso.POO
             ExibirDadosProduto(produto);
             AdicionarOuRemoverProduto(produto);
 
-            Console.WriteLine("FIM");
+           Console.WriteLine($"\nDADOS FINAIS: \n{produto}");
+        }
+
+        public override string ToString()
+        {
+            return "\nNome produto: " + Nome + 
+                "\nQuantidade: " + Quantidade + 
+                "\nPreço Unitário R$: " + Preco.ToString("F2", CultureInfo.InvariantCulture) +
+                "\nValor Total: " + ValorTotalEmEstoque(Preco, Quantidade).ToString("F2", CultureInfo.InvariantCulture);
         }
 
         public static void ExibirDadosProduto(Produto produto)
         {
             Console.Clear();
-            Console.WriteLine("=============================================");
+            Console.WriteLine("\n=============================================");
             Console.WriteLine("== Nome ========== Quantidade == PREÇO ======");
             Console.WriteLine("=============================================\n");
             Console.WriteLine($" - Nome: {produto.Nome} " +
@@ -131,7 +139,7 @@ namespace curso.POO
 
         public static void RemoverProdutos(Produto produto)
         {
-            Console.Write($"\nDigite a quantidade do produto a ser removida: {produto.Nome}, que deseja incluir: ");
+            Console.Write($"\nDigite a quantidade do produto: {produto.Nome}, que deseja excluir: ");
             int quantidadeAtualizada = int.Parse(Console.ReadLine());
 
             produto.Quantidade -= quantidadeAtualizada;
@@ -141,8 +149,9 @@ namespace curso.POO
 
         public static void MsgAperteTecla()
         {
-            Console.Write("\nAperte uma tecla para continuar");
+            Console.Write("\nAperte uma tecla para continuar ");
             Console.ReadKey();
+            Console.Clear();
         }
     }
 }
