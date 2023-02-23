@@ -55,7 +55,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                                         
                 #region "Programação Orientada a Objetos"
 
-                // PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
                 {"Exercício - Resolvendo um problema SEM orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
                 {"Exercício - Resolvendo um problema COM orientação a objetos - Calcular área de um triângulo", Triangulo.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
@@ -63,6 +63,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
                 {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto", Produto.Executar},
                 {"Exercício de Fixação 01 - POO - Calcular Área, Perímetro e Diagonal", Retangulo.Executar}, 
+                {"Exercício de Fixação 02 - POO - Ler e mostrar dados de um funcionário", Colaborador.Executar} 
                 
                 #endregion
             });
