@@ -4,6 +4,7 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitiva;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 using curso.POO;
+using curso.POO.ExercicioFixacao;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -61,6 +62,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar},
                 {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
                 {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto", Produto.Executar},
+                {"Exercício de Fixação 01 - POO - Calcular Área, Perímetro e Diagonal", Retangulo.Executar}, 
                 
                 #endregion
             });
