@@ -71,7 +71,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão01", CalculadoraEsfera.Executar},
                 {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão02", CalculadoraEsfera02.Executar}, 
                 {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão03", CalculadoraEsfera03.Executar},
-                {"Exercício de Fixação 01 - POO - ler a cotação do dólar e um valor a ser convertido em R$", ConversorDeMoedas.Executar},
+                {"Exercício de Fixação - POO - ler a cotação do dólar e um valor a ser convertido em R$", ConversorDeMoedas.Executar},
                 
                 #endregion
 
@@ -79,7 +79,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
 
                 // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Capítulo: Construtores, palavra this, sobrecarga, encapsulamento.
-                //{"Exercício - POO - ", Produto02.Executar},
+
+                {"Exercício - POO - Criar a classe Produto com construtor", Produto02.Executar},
 
                 #endregion
             });
