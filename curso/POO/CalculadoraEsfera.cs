@@ -23,11 +23,6 @@ namespace curso.POO
 
         public static void Executar()
         {
-            Exibir();
-        }
-
-        static void Exibir()
-        {
             Console.Write("Entre o valor do raio: ");
             double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double circunferencia = CalcularCircunferencia(raio);
@@ -45,6 +40,7 @@ namespace curso.POO
         {
             return 2.0 * Pi * valorRaio;
         }
+
         static double CalcularVolume(double valorRaio)
         {
             return 4.0 / 3.0 * Pi * valorRaio * valorRaio * valorRaio;
