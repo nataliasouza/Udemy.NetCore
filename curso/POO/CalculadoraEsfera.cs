@@ -9,6 +9,10 @@
 //Volume: 113.04
 //Valor de PI: 3.14
 
+//• Versão 1: métodos na própria classe do programa
+//• Nota: dentro de um método estático você não pode chamar membros de
+//instância da mesma classe.
+
 using System.Globalization;
 
 namespace curso.POO
@@ -18,7 +22,12 @@ namespace curso.POO
         static double Pi = 3.14;
 
         public static void Executar()
-        {           
+        {
+            Exibir();
+        }
+
+        static void Exibir()
+        {
             Console.Write("Entre o valor do raio: ");
             double raio = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double circunferencia = CalcularCircunferencia(raio);
@@ -27,7 +36,7 @@ namespace curso.POO
             Console.Clear();
 
             Console.WriteLine($"\nValor do raio: {raio.ToString("F2", CultureInfo.InvariantCulture)}");
-            Console.WriteLine($"Circunferência: { circunferencia.ToString("F2", CultureInfo.InvariantCulture)}" );
+            Console.WriteLine($"Circunferência: { circunferencia.ToString("F2", CultureInfo.InvariantCulture)}");
             Console.WriteLine($"Volume: {volume.ToString("F2", CultureInfo.InvariantCulture)}");
             Console.WriteLine($"Valor de PI: {Pi.ToString("F2", CultureInfo.InvariantCulture)}");
         }
