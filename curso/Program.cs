@@ -83,6 +83,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Criar a classe Produto com construtor", Produto02.Executar},
                 {"Exercício - POO - Criar a classe Produto com construtor opcional", Produto03.Executar},
                 {"Sintaxe Alternativa p/ iniciar valores - Criar a classe Produto com construtor opcional", Produto04.Executar},
+                {"Exercício - POO - Palavra this - Referência para o próprio objeto ", Produto05.Executar},
 
                 #endregion
             });
