@@ -5,6 +5,7 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 using curso.POO;
 using curso.POO.ExercicioFixacao;
+using curso.POO.ExerciciosSecao05;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -53,9 +54,11 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
 
                 #endregion
                                         
-                #region "Programação Orientada a Objetos"
+                #region "Intodução à Programação Orientada a Objetos"
 
                 // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Capítulo: Classe, atributos, métodos, membros, membros estáticos
+
                 {"Exercício - Resolvendo um problema SEM orientação a objetos - Calcular área de um triângulo", ProblemaExemplo.Executar},
                 {"Exercício - Resolvendo um problema COM orientação a objetos - Calcular área de um triângulo", Triangulo.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
@@ -65,10 +68,19 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício de Fixação 01 - POO - Calcular Área, Perímetro e Diagonal", Retangulo.Executar}, 
                 {"Exercício de Fixação 02 - POO - Ler e mostrar dados de um funcionário", Colaborador.Executar}, 
                 {"Exercício de Fixação 03 - POO - Ler nome e notas e mostrar nota final de um Aluno", Aluno.Executar},
-                {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera", CalculadoraEsfera.Executar},
+                {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão01", CalculadoraEsfera.Executar},
                 {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão02", CalculadoraEsfera02.Executar}, 
-                {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão03", CalculadoraEsfera03.Executar}
+                {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera Versão03", CalculadoraEsfera03.Executar},
+                {"Exercício de Fixação 01 - POO - ler a cotação do dólar e um valor a ser convertido em R$", ConversorDeMoedas.Executar},
                 
+                #endregion
+
+                #region "Técnicas de Programação Orientada a Objetos e Estrutura de Dados"
+
+                // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Capítulo: Construtores, palavra this, sobrecarga, encapsulamento.
+                //{"Exercício - POO - ", Produto02.Executar},
+
                 #endregion
             });
 
