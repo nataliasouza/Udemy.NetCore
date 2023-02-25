@@ -64,7 +64,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto", Produto.Executar},
                 {"Exercício de Fixação 01 - POO - Calcular Área, Perímetro e Diagonal", Retangulo.Executar}, 
                 {"Exercício de Fixação 02 - POO - Ler e mostrar dados de um funcionário", Colaborador.Executar}, 
-                {"Exercício de Fixação 03 - POO - Ler nome e notas e mostrar nota final de um Aluno", Aluno.Executar} 
+                {"Exercício de Fixação 03 - POO - Ler nome e notas e mostrar nota final de um Aluno", Aluno.Executar},
+                {"Problema Exemplo - POO - Ler valor e mostrar circunferência e volume de uma esfera", CalculadoraEsfera.Executar} 
                 
                 #endregion
             });
