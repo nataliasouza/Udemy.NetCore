@@ -88,7 +88,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Properties - Exemplo utilizando a classe Produto07", ExemploProperties.Executar},
                 {"Exercício - POO - Auto Properties - Exemplo utilizando a classe Produto08", ExemploAutoProperties.Executar},
                 {"Exercício - POO - Modificadores Acesso - Anotações", ModificadoresAcesso.Executar},
-
+                {"Exercício - POO - Conta Bancária - Anotações", ContaBancaria02.Executar}
 
                 #endregion
             });
