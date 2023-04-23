@@ -14,9 +14,9 @@ namespace curso.POO.ExerciciosSecao05
             Titular = titular;
         }
 
-        public ContaBancaria02(int numero, string titular, double saldo) : this(numero, titular)
+        public ContaBancaria02(int numero, string titular, double depositoInicial) : this(numero, titular)
         {
-            Saldo = saldo;
+            Deposito(depositoInicial);
         }
 
         public static void Executar()
