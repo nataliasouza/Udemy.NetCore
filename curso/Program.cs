@@ -6,6 +6,7 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 using curso.POO;
 using curso.POO.ExercicioFixacao;
 using curso.POO.ExerciciosSecao05;
+using curso.POO.ExerciciosSecao06;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -88,7 +89,16 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Properties - Exemplo utilizando a classe Produto07", ExemploProperties.Executar},
                 {"Exercício - POO - Auto Properties - Exemplo utilizando a classe Produto08", ExemploAutoProperties.Executar},
                 {"Exercício - POO - Modificadores Acesso - Anotações", ModificadoresAcesso.Executar},
-                {"Exercício - POO - Conta Bancária - Anotações", ContaBancaria02.Executar}
+                {"Exercício - POO - Conta Bancária - Anotações", ContaBancaria02.Executar},
+                
+                #endregion
+                
+                #region "Programação Orientada a Objetos - Arrays / Listas"
+
+                // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Capítulo: Comportamento de memória, arrays, listas.
+
+                {"Exercício - POO - Exercício Structs", ExercicioStruct.Executar},                
 
                 #endregion
             });
