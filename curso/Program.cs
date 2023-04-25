@@ -98,7 +98,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Capítulo: Comportamento de memória, arrays, listas.
 
-                {"Exercício - POO - Exercício Structs", ExercicioStruct.Executar},                
+                {"Exercício - POO - Exercício Structs", ExercicioStruct.Executar},
+                {"Exercício - POO - Desalocação por Garbage Collector e por Escopo", Desalocacao.Executar},
 
                 #endregion
             });
