@@ -60,29 +60,53 @@ namespace curso.POO.ExerciciosSecao05
             Console.Write("\nDeseja fazer um depósito? (s/n) ");
             char respostaDeposito = char.Parse(Console.ReadLine()!);
 
-            if (respostaDeposito == 's' || respostaDeposito == 'S')            {
+            if (respostaDeposito == 's' || respostaDeposito == 'S')            
+            {
                 
                 Console.Write("\nEntre um valor para depósito: ");
                 double valorDeposito = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
                 conta.Deposito(valorDeposito);
 
                 Console.Clear();
-                Console.WriteLine("\n\nDados da conta atualizados!");                
-                Console.WriteLine($"\n\t" + conta.ToString());
-                Console.WriteLine($"\tValor do depósito: " + valorDeposito);
+                Console.WriteLine("\n\nDados da conta atualizados!");
+                Console.WriteLine($"\n\tValor do depósito: " + valorDeposito.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine($"\n\t" + conta.ToString());                
 
             } else
             {
-                Console.WriteLine("\n\nDados da conta atualizados:");
+                Console.WriteLine("\n\nDados da conta atualizados!");
                 Console.WriteLine($"\t" + conta);
             }
 
-            //conta.ExibirContaBancaria();
-            //Console.Write("\nEntre um valor para saque: ");
-            //double valorSaque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-            //conta.Saque(valorSaque);
-            //Console.WriteLine("\nDados da conta atualizados:");
-            //Console.WriteLine($"\t" + conta);
+            Console.Write($"\n\nAperte uma tecla para continuar!");
+            Console.ReadKey();
+
+            conta.ExibirContaBancaria();
+            Console.WriteLine($"Saldo Atual R$: {conta.Saldo.ToString("F2", CultureInfo.InvariantCulture)}");
+            Console.Write("\nDeseja fazer um Saque? (s/n) ");
+            char respostaSaque = char.Parse(Console.ReadLine()!);
+
+            Console.Clear();
+
+            if (respostaSaque == 's' || respostaSaque == 'S')
+            {
+                Console.WriteLine($"Saldo Atual R$: {conta.Saldo.ToString("F2", CultureInfo.InvariantCulture)}");
+                Console.Write("\nEntre um valor para saque: ");
+                double valorSaque = double.Parse(Console.ReadLine()!, CultureInfo.InvariantCulture);
+                conta.Saque(valorSaque);
+
+                Console.Clear();
+                Console.WriteLine("\n\nDados da conta atualizados!");
+                Console.WriteLine("\nFoi cobrado R$ 5,00 de taxa pelo saque!");
+                Console.WriteLine($"\n\tValor do Saque: " + valorSaque.ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine($"\n\t" + conta.ToString());
+
+            } else
+            {
+                Console.WriteLine("\n\nDados da conta atualizados!");
+                Console.WriteLine($"\t" + conta.ToString());
+            }
+                        
         }
 
         public void Deposito(double quantia)
