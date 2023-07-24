@@ -101,6 +101,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Exercício Structs", ExercicioStruct.Executar},
                 {"Exercício - POO - Desalocação por Garbage Collector e por Escopo", Desalocacao.Executar},
                 {"Exercício - POO - Nullable", ValoresNulos.Executar},
+                {"Exercício - POO - Vetores - Parte 1", Vetores01.Executar},
 
                 #endregion
             });
