@@ -103,6 +103,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Nullable", ValoresNulos.Executar},
                 {"Exercício - POO - Vetores - Parte 1", Vetores01.Executar},
                 {"Exercício - POO - Vetores - Parte 2", Vetores02.Executar},
+                {"Exercício de Fixação - POO - Vetores ", Vetores03.Executar}
 
                 #endregion
             });
