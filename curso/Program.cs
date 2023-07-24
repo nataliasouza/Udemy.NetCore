@@ -65,7 +65,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - Primeiros Exercícios - Exercício 01 - Qual pessoa tem mais idade?", Pessoa.Executar},
                 {"Exercício - Primeiros Exercícios - Exercício 02 - Media Salarial", Funcionario.Executar},
                 {"Exercício - Criando um método p/ reaproveitamento e delegação - Calcular área de um triângulo", Triangulo02.Executar},
-                {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto", Produto.Executar},
+                {"Exercício - Segundo problema exemplo - Ler, mostrar, inserir e visualizar dados do Produto08", Produto.Executar},
                 {"Exercício de Fixação 01 - POO - Calcular Área, Perímetro e Diagonal", Retangulo.Executar}, 
                 {"Exercício de Fixação 02 - POO - Ler e mostrar dados de um funcionário", Colaborador.Executar}, 
                 {"Exercício de Fixação 03 - POO - Ler nome e notas e mostrar nota final de um Aluno", Aluno.Executar},
@@ -81,9 +81,9 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Capítulo: Construtores, palavra this, sobrecarga, encapsulamento.
 
-                {"Exercício - POO - Criar a classe Produto com construtor", Produto02.Executar},
-                {"Exercício - POO - Criar a classe Produto com construtor opcional", Produto03.Executar},
-                {"Sintaxe Alternativa p/ iniciar valores - Criar a classe Produto com construtor opcional", Produto04.Executar},
+                {"Exercício - POO - Criar a classe Produto08 com construtor", Produto02.Executar},
+                {"Exercício - POO - Criar a classe Produto08 com construtor opcional", Produto03.Executar},
+                {"Sintaxe Alternativa p/ iniciar valores - Criar a classe Produto08 com construtor opcional", Produto04.Executar},
                 {"Exercício - POO - Palavra this - Referência para o próprio objeto", Produto05.Executar},
                 {"Exercício - POO - Encapsulamento - Exemplo utilizando a classe Produto06", Exemplo.Executar},
                 {"Exercício - POO - Properties - Exemplo utilizando a classe Produto07", ExemploProperties.Executar},
@@ -102,6 +102,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício - POO - Desalocação por Garbage Collector e por Escopo", Desalocacao.Executar},
                 {"Exercício - POO - Nullable", ValoresNulos.Executar},
                 {"Exercício - POO - Vetores - Parte 1", Vetores01.Executar},
+                {"Exercício - POO - Vetores - Parte 2", Vetores02.Executar},
 
                 #endregion
             });
