@@ -16,12 +16,11 @@
 
 namespace curso.POO.ExerciciosSecao06
 {
-    public class Vetores03
-    {
+    public class Quarto
+    {       
         public static void Executar()
         {
             Estudante[] quartoEstudante = new Estudante[10];
-
             Console.Write("Quantidade de quartos que serão alugados: ");
             int quantidadeEstudantes = int.Parse(Console.ReadLine()!);
             
@@ -36,9 +35,19 @@ namespace curso.POO.ExerciciosSecao06
                 string email = Console.ReadLine();
 
                 Console.Write("Número do Quarto: ");
-                int numeroQuarto = int.Parse(Console.ReadLine());
+                int numeroQuarto = int.Parse(Console.ReadLine());           
+
+                while (numeroQuarto < 0 || numeroQuarto > 10)
+                {
+                    Console.Write("\n\nDigite o número do quarto (0 - 9)!: ");
+                    int numeroQuartoValido = int.Parse(Console.ReadLine());
+
+                    numeroQuarto = numeroQuartoValido;
+
+                }
 
                 quartoEstudante[numeroQuarto] = new Estudante(nome, email);
+
             }
 
             Console.WriteLine("\nQuartos ocupados:");
@@ -49,16 +58,17 @@ namespace curso.POO.ExerciciosSecao06
                     Console.WriteLine(i + ": " + quartoEstudante[i]);
                 }
             }
-        }
+        }       
+            
     }
 
     public class Estudante
     {
         public string Nome { get; set; }
-        public string Email { get; set; }
+        public string Email { get; set; }     
 
         public Estudante(string nome, string email)
-        {
+        {            
             Nome = nome;
             Email = email;
         }
