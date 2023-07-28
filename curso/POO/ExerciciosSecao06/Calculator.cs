@@ -9,7 +9,7 @@ namespace curso.POO.ExerciciosSecao06
     {
         public static void Executar()
         {
-            int result = Calculator.Sum(new int[] { 30, 40, 1000, 55, 5 });
+            int result = Calculator.Sum(30, 40, 1000, 55, 5 );
             Console.WriteLine(result);
         }
         public static int Sum(params int[] numbers)
@@ -20,7 +20,6 @@ namespace curso.POO.ExerciciosSecao06
                 sum += numbers[i];
             }
             return sum;
-        }
-        
+        }        
     }
 }
