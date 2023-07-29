@@ -19,16 +19,16 @@ namespace curso.POO.ExerciciosSecao06
     {
         public static void Executar()
         {
-            int result = Calculator.Sum(30, 40, 1000, 55, 5 );
+            int result = Sum(30, 40, 1000, 55, 5 );
             Console.WriteLine(result);
 
             int a = 10; // precisa ser iniciada
-            Calculator.Triple(ref a); //Modificador ref 
+            Triple(ref a); //Modificador ref 
             Console.WriteLine(a);
 
             int b = 30;
             int triple; // Não precisa ser iniciada
-            Calculator.Triple(b, out triple);//Modificador out
+            Triple(b, out triple);//Modificador out
             Console.WriteLine(triple);
         }
         public static int Sum(params int[] numbers) //Modificador params
