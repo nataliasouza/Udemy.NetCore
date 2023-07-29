@@ -107,6 +107,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Modificadores de Parâmetros - POO - Params, ref e out ", Calculator.Executar},
                 {"Laço foreach - POO - Exercício ", LacoForeach.Executar},
                 {"Exercício Listas - POO - Parte 1 e 2", Listas.Executar},
+                {"Exercício de Fixação - POO - Listas", Employee.Executar},
 
                 #endregion
             });
