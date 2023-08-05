@@ -7,6 +7,7 @@ using curso.POO;
 using curso.POO.ExercicioFixacao;
 using curso.POO.ExerciciosSecao05;
 using curso.POO.ExerciciosSecao06;
+using curso.POO.ExerciciosSecao07;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -108,6 +109,15 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Laço foreach - POO - Exercício ", LacoForeach.Executar},
                 {"Exercício Listas - POO - Parte 1 e 2", Listas.Executar},
                 {"Exercício de Fixação - POO - Listas", Employee.Executar},
+
+                #endregion
+
+                 #region "Tópicos especiais em C# - PARTE 1"
+
+                // PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Capítulo: Tópicos especiais em C# - PARTE 1.
+
+                {"Sintaxe alternativa: switch-case", ExercicioSwitch.Executar},
 
                 #endregion
             });
