@@ -119,6 +119,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
 
                 {"Sintaxe alternativa: switch-case", ExercicioSwitch.Executar},
                 {"Sintaxe alternativa: Expressão condicional ternária", CondicionalTernaria.Executar},
+                {"Funções interessantes para string", FuncoesString.Executar},
 
                 #endregion
             });
