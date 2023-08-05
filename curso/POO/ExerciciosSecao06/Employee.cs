@@ -1,6 +1,5 @@
 ﻿
 using System.Globalization;
-using System.Xml.Linq;
 
 namespace curso.POO.ExerciciosSecao06
 {
