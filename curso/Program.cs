@@ -121,7 +121,9 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Sintaxe alternativa: Expressão condicional ternária", CondicionalTernaria.Executar},
                 {"Funções interessantes para string", FuncoesString.Executar},
                 {"DateTime - Representando data e hora", DataHora.Executar},
+                {"DateTime - Propriedades e operações com DateTime", OperacoesPropsDateTime.Executar},
                 {"TimeSpan - Representando durações", Duracoes.Executar},
+                
 
                 #endregion
             });
