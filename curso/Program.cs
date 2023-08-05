@@ -112,7 +112,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
 
                 #endregion
 
-                 #region "Tópicos especiais em C# - PARTE 1"
+                #region "Tópicos especiais em C# - PARTE 1"
 
                 // PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Capítulo: Tópicos especiais em C# - PARTE 1.
@@ -123,8 +123,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"DateTime - Representando data e hora", DataHora.Executar},
                 {"DateTime - Propriedades e operações com DateTime", OperacoesPropsDateTime.Executar},
                 {"TimeSpan - Representando durações", Duracoes.Executar},
+                {"TimeSpan - Propriedades e Operações com TimeSpan", OperacoesPropsTimeSpan.Executar},
                 
-
                 #endregion
             });
 
