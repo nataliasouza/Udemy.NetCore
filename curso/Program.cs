@@ -122,8 +122,9 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Funções interessantes para string", FuncoesString.Executar},
                 {"DateTime - Representando data e hora", DataHora.Executar},
                 {"DateTime - Propriedades e operações com DateTime", OperacoesPropsDateTime.Executar},
+                {"DateTimeKind e padrão ISO 8601", ExercicioDateTimeKind.Executar},
                 {"TimeSpan - Representando durações", Duracoes.Executar},
-                {"TimeSpan - Propriedades e Operações com TimeSpan", OperacoesPropsTimeSpan.Executar},
+                {"TimeSpan - Propriedades e Operações com TimeSpan", OperacoesPropsTimeSpan.Executar}                
                 
                 #endregion
             });
