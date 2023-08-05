@@ -118,6 +118,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // Capítulo: Tópicos especiais em C# - PARTE 1.
 
                 {"Sintaxe alternativa: switch-case", ExercicioSwitch.Executar},
+                {"Sintaxe alternativa: Expressão condicional ternária", CondicionalTernaria.Executar},
 
                 #endregion
             });
