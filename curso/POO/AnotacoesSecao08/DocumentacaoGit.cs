@@ -25,7 +25,8 @@ namespace curso.POO.AnotacoesSecao08
                 Console.WriteLine("4 - Salvar 1ª versão do projeto");
                 Console.WriteLine("5 - Salvar nova versão");
                 Console.WriteLine("6 - Clonar e modificar um projeto de um repositório");
-                Console.WriteLine("8 - Como remover arquivos da área de stage");
+                Console.WriteLine("7 - Ver o histórico de versões e mostrar a diferença entre arquivos");
+                Console.WriteLine("8 - Como criar e mudar para outra branch existente");
                 Console.WriteLine("9 - Como desfazer modificações não salvas");
                 Console.WriteLine("10 - O que fazer quando abre o editor VIM");
                 Console.WriteLine("11 - Como desfazer o último commit");
@@ -64,14 +65,14 @@ namespace curso.POO.AnotacoesSecao08
                             break;
 
                         case "6":
-                            Console.WriteLine("Criar opção");
+                            ClonarModificarProjeto();
                             break;
 
                         case "7":
-                            Console.WriteLine("Criar opção");
+                            VerHistoricoOuMostrarDiferenca();
                             break;
                         case "8":
-                            ConfigurarIdentificacaoGit();
+                            CriarBranchOuIrParaOutra();
                             break;
 
                         case "9":
@@ -108,7 +109,7 @@ namespace curso.POO.AnotacoesSecao08
                 }
             }
         }
-
+        //case1
         public static void TextoExplicativoGitGithub()
         {
             Console.Clear();
@@ -127,7 +128,7 @@ namespace curso.POO.AnotacoesSecao08
             LimparTela();
             ExibirMenu();
         }
-
+        //case2
         public static void ConfigurarIdentificacaoGit()
         {
             Console.Clear();
@@ -140,7 +141,7 @@ namespace curso.POO.AnotacoesSecao08
             LimparTela();
             ExibirMenu();
         }
-
+        //case3
         public static void ConfigurarChaveSSHGithub()
         {
             Console.Clear();
@@ -155,7 +156,7 @@ namespace curso.POO.AnotacoesSecao08
             LimparTela();
             ExibirMenu();
         }
-
+        //case4
         public static void SalvarPrimeiraVersao()
         {
             Console.Clear();
@@ -167,8 +168,10 @@ namespace curso.POO.AnotacoesSecao08
             Console.WriteLine("git remote add origin git@github.com:seuusuario/seurepositorio.git");// adiciona o repositorio remoto
             Console.WriteLine("git push -u origin main");//envia as modificações para o repositório remoto
             Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
         }
-
+        //case5
         public static void SalvarNovaVersao()
         {
             Console.Clear();
@@ -178,6 +181,47 @@ namespace curso.POO.AnotacoesSecao08
             Console.WriteLine("git commit -m \"Mensagem explicativa\"");
             Console.WriteLine("git push");
             Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case6
+        public static void ClonarModificarProjeto()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("git clone git@github.com:seuusuario/seurepositorio.git");
+            Console.WriteLine("git add .");
+            Console.WriteLine("git commit -m \"Mensagem explicativa\"");
+            Console.WriteLine("git push");
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+
+        }
+        //case7
+        public static void VerHistoricoOuMostrarDiferenca()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("git log");//Verificando o histórico de versões
+            Console.WriteLine("git log --oneline");//Listagem resumida
+            Console.WriteLine("\ngit diff");//Comando que mostra a diferença entre arquivos modificados
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case8
+        public static void CriarBranchOuIrParaOutra()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\nCom o git checkout você pode mudar de branch");
+            Console.WriteLine("\tgit checkout \"nome_da_branch\"");            
+            Console.WriteLine("\n\nCaso a branch ainda não exista você poderá passar o parâmetro -b para criar.");
+            Console.WriteLine("\tgit checkout -b \"nome_da_branch\"");
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
         }
 
         public static void LimparTela()
