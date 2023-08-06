@@ -9,6 +9,7 @@ using curso.POO.ExercicioFixacao;
 using curso.POO.ExerciciosSecao05;
 using curso.POO.ExerciciosSecao06;
 using curso.POO.ExerciciosSecao07;
+using curso.POO.ExerciciosSecao09.Enumeradores;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -134,7 +135,15 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Nivelamento Git e Github.
 
-                {"Documentação: Anotaçoes sobre GIT - GITHUB", DocumentacaoGit.Executar}
+                {"Documentação: Anotaçoes sobre GIT - GITHUB", DocumentacaoGit.Executar},
+                #endregion
+                
+                #region "Enumerações e Composição"
+
+                // PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Capítulo: Enumerações, composição.
+
+                {"Exercício Enumerações (enum)", Enumeracoes.Executar}
 
                 #endregion
 });
