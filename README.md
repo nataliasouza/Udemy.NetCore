@@ -1,7 +1,7 @@
 # Curso C# Completo - Programação Orientada a Objetos + Projetos
 <img src="https://img.shields.io/static/v1?label=Nelio Alves&message=UDEMY&color=7159c1&style=for-the-badge"/>
 
-:spiral_calendar: Atualizado em 05 de agosto de 2023
+:spiral_calendar: Atualizado em 06 de agosto de 2023
 
 :construction: O projeto está em desenvolvimento :construction:<br>
 
@@ -31,9 +31,9 @@ Seção 6. Comportamento de mémoria, Arrays, Listas.
 
 Seção 7. Tópicos especiais em C# - Parte 1. 
 
-Seção 8. Nivelamento Git e Github. :warning: Estou aqui! :warning:
+Seção 8. Nivelamento Git e Github. 
 
-Seção 9. Enumerações e composição.
+Seção 9. Enumerações e composição. :warning: Estou aqui! :warning:
 
 Seção 10. Herança e Polimorfismo.
 
