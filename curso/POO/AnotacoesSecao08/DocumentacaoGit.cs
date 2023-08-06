@@ -121,8 +121,7 @@ namespace curso.POO.AnotacoesSecao08
             Console.WriteLine("\t * É uma plataforma social (usuários, página de perfil, seguidores, colaboração, etc.). Dica: currículo!");
             Console.WriteLine("\t * Maior serviço do mundo de hospedagem de projetos de código aberto.");
             Console.WriteLine("\t * Modelo de cobrança: gratuito para projetos de código aberto e para projetos privados.");
-            Console.WriteLine("\t * Alternativas: BitBucket, GitLab, etc.\n");
-            
+            Console.WriteLine("\t * Alternativas: BitBucket, GitLab, etc.\n");            
             LimparTela();
             ExibirMenu();
         }
@@ -130,12 +129,10 @@ namespace curso.POO.AnotacoesSecao08
         public static void ConfigurarIdentificacaoGit()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("\nConfigurando sua identificação no Git:\n");
-            Console.WriteLine("git config --global user.name \"Seu nome\"");
-            Console.WriteLine("git config --global user.email \"Seu email de cadastro do GitHub\"");
-            Console.WriteLine("git config --list");
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("\nConfigurando sua identificação no Git:\n");
+            Console.WriteLine("\tgit config --global user.name \"Seu nome\"");
+            Console.WriteLine("\tgit config --global user.email \"Seu email de cadastro do GitHub\"");
+            Console.WriteLine("\tgit config --list");            
             LimparTela();
             ExibirMenu();
         }
@@ -143,14 +140,12 @@ namespace curso.POO.AnotacoesSecao08
         public static void ConfigurarChaveSSHGithub()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("\nConfigurar chave SSH para o Github:\n");
+            ExibirTituloDaOpcao("\nConfigurar chave SSH para o Github:\n");
             Console.WriteLine("\t * SSH é um protocolo para comunicação de dados com segurança.");
             Console.WriteLine("\t * O Github aboliu a autenticação somente com usuário e senha.");
             Console.WriteLine("\t * A ideia básica é cadastrar previamente quais computadores podem acessar o Github em seu nome. \n" +
                 "\t Outros computadores não conseguem acessar.\n");
             Console.WriteLine("Para isto você deve:\n\n(1) Gerar uma chave SSH no seu computador.\n(2) Cadastrar essa chave no seu Github.");
-            Console.WriteLine("\n====================================================================================================================");
             LimparTela();
             ExibirMenu();
         }
@@ -158,14 +153,15 @@ namespace curso.POO.AnotacoesSecao08
         public static void SalvarPrimeiraVersao()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("git init"); //inicializa o git no repositório local
-            Console.WriteLine("git add ."); // adiciona todos os arquivos criados ou alterados.
-            Console.WriteLine("git commit -m \"Mensagem explicativa\""); //Armazena o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças
-            Console.WriteLine("git branch -M main"); //Define a branch a ser usada
-            Console.WriteLine("git remote add origin git@github.com:seuusuario/seurepositorio.git");// adiciona o repositorio remoto
-            Console.WriteLine("git push -u origin main");//envia as modificações para o repositório remoto
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Salvar 1ª versão do projeto");
+            Console.WriteLine("\nInicializa o git no repositório local: \n\n\tgit init");
+            Console.WriteLine("\n\nadiciona todos os arquivos criados ou alterados: \n\n\tgit add .");
+            Console.WriteLine("\n\nArmazena o conteúdo atual do índice em um novo commit, " +
+                "\njuntamente com uma mensagem de registro do usuário que descreve as mudanças:");
+            Console.WriteLine("\n\tgit commit -m \"Mensagem explicativa\"");
+            Console.WriteLine("\n\nDefine a branch principal a ser usada: \n\n\tgit branch -M main");
+            Console.WriteLine("\n\nAdiciona o repositorio remoto: \n\n\tgit remote add origin git@github.com:seuusuario/seurepositorio.git");
+            Console.WriteLine("\n\nEnvia as modificações para o repositório remoto: \n\n\tgit push -u origin main");
             LimparTela();
             ExibirMenu();
         }
@@ -173,12 +169,15 @@ namespace curso.POO.AnotacoesSecao08
         public static void SalvarNovaVersao()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("git status");//exibe todas modificações
-            Console.WriteLine("git add .");
-            Console.WriteLine("git commit -m \"Mensagem explicativa\"");
-            Console.WriteLine("git push");
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Salvando uma nova versão do projeto");            
+            Console.WriteLine("\nVerificando o status - Lista e mostra quais arquivos estão em quais estados :" +
+                "\n\n\tgit status");
+            Console.WriteLine("\n\nPara monitorar um ou mais novos arquivos:" +
+                "\n\n\tgit add .");
+            Console.WriteLine("\n\nArmazena o conteúdo atual do índice em um novo commit, " +
+                "\njuntamente com uma mensagem de registro do usuário que descreve as mudanças:");
+            Console.WriteLine("\n\tgit commit -m \"Mensagem explicativa\"");
+            Console.WriteLine("\n\nTransfere commits a partir do seu repositório local para um repositório remoto: \n\n\tgit push");            
             LimparTela();
             ExibirMenu();
         }
@@ -186,12 +185,14 @@ namespace curso.POO.AnotacoesSecao08
         public static void ClonarModificarProjeto()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("git clone git@github.com:seuusuario/seurepositorio.git");
-            Console.WriteLine("git add .");
-            Console.WriteLine("git commit -m \"Mensagem explicativa\"");
-            Console.WriteLine("git push");
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Clonar ou modificar o projeto de um repositório");
+            Console.WriteLine("\nClonar um repositório: \n\n\tgit clone git@github.com:seuusuario/seurepositorio.git");
+            Console.WriteLine("\n\n * Incluindo as modificações e monitoramento de novos arquivos." +
+                "\n * Armazena junto com a mensagem de registro todas as mudanças e quem realizou." +
+                "\n * Depois envia as mudanças para o repositório remoto." +
+                "\n\n\tgit add .");
+            Console.WriteLine("\tgit commit -m \"Mensagem explicativa\"");
+            Console.WriteLine("\tgit push");            
             LimparTela();
             ExibirMenu();
 
@@ -212,12 +213,11 @@ namespace curso.POO.AnotacoesSecao08
         public static void CriarBranchOuIrParaOutra()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("\nCom o git checkout você pode mudar de branch");
-            Console.WriteLine("\tgit checkout \"nome_da_branch\"");            
+            ExibirTituloDaOpcao("Como criar e mudar para outra branch existente");
+            Console.WriteLine("\nCom o git checkout você pode mudar de branch.");
+            Console.WriteLine("\n\tgit checkout \"nome_da_branch\"");            
             Console.WriteLine("\n\nCaso a branch ainda não exista você poderá passar o parâmetro -b para criar.");
-            Console.WriteLine("\tgit checkout -b \"nome_da_branch\"");
-            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\n\tgit checkout -b \"nome_da_branch\"");            
             LimparTela();
             ExibirMenu();
         }
