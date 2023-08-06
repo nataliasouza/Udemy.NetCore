@@ -11,12 +11,8 @@ namespace curso.POO.AnotacoesSecao08
         {        
             ExibirMenu();            
         }
-
         public static void ExibirMenu()
-        {
-            string opcao = "0";
-
-            while (opcao != "16")
+        {              
             {
                 Console.WriteLine("\n==================== MENU DE OPÇÕES =========================\n");
                 Console.WriteLine("1 - O que é Git e GitHub?");
@@ -38,93 +34,95 @@ namespace curso.POO.AnotacoesSecao08
                 Console.WriteLine("\n=============================================================");
 
                 Console.Write("\n\tDigite sua opção para ler as informações: ");
-                opcao = Console.ReadLine();
+                string opcaoEscolhida = Console.ReadLine()!;
+                int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
 
-                if (opcao != "16")
+                switch (opcaoEscolhidaNumerica)
                 {
-                    switch (opcao)
-                    {
-                        case "1":
-                            TextoExplicativoGitGithub();
-                            break;
+                    case 1:
+                        TextoExplicativoGitGithub();
+                        break;
 
-                        case "2":
-                            ConfigurarIdentificacaoGit();
-                            break;
+                    case 2:
+                        ConfigurarIdentificacaoGit();
+                        break;
 
-                        case "3":                            
-                            ConfigurarChaveSSHGithub();
-                            break;
+                    case 3:
+                        ConfigurarChaveSSHGithub();
+                        break;
 
-                        case "4":
-                            SalvarPrimeiraVersao();
-                            break;
+                    case 4:
+                        SalvarPrimeiraVersao();
+                        break;
 
-                        case "5":
-                            SalvarNovaVersao();
-                            break;
+                    case 5:
+                        SalvarNovaVersao();
+                        break;
 
-                        case "6":
-                            ClonarModificarProjeto();
-                            break;
+                    case 6:
+                        ClonarModificarProjeto();
+                        break;
 
-                        case "7":
-                            VerHistoricoOuMostrarDiferenca();
-                            break;
-                        case "8":
-                            CriarBranchOuIrParaOutra();
-                            break;
+                    case 7:
+                        VerHistoricoOuMostrarDiferenca();
+                        break;
+                    case 8:
+                        CriarBranchOuIrParaOutra();
+                        break;
 
-                        case "9":
-                            ConfigurarChaveSSHGithub();
-                            break;
+                    case 9:
+                        ComoDesfazerModificaçõesNaoSalvas();
+                        break;
 
-                        case "10":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 10:
+                        ComoUsarEditorVIM();
+                        break;
 
-                        case "11":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 11:
+                        ComoDesfazerUltimoCommit();
+                        break;
 
-                        case "12":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 12:
+                        Console.WriteLine("Criar opção");
+                        break;
 
-                        case "13":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 13:
+                        Console.WriteLine("Criar opção");
+                        break;
 
-                        case "14":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 14:
+                        Console.WriteLine("Criar opção");
+                        break;
 
-                        case "15":
-                            Console.WriteLine("Criar opção");
-                            break;
+                    case 15:
+                        Console.WriteLine("Criar opção");
+                        break;
+                    case 16:
+                        Console.Write("\n\n\tSaindo do sistema...");
+                        Thread.Sleep(2500);
+                        Console.Clear();
+                        break;
 
-                        default: Console.WriteLine("\nDigite uma opção válida!");
-                            break;
-                    }
+                    default:
+                        Console.WriteLine("\nDigite uma opção válida!");
+                        break;
                 }
             }
         }
         //case1
         public static void TextoExplicativoGitGithub()
         {
-            Console.Clear();
-            Console.WriteLine("\n\n====================================================================================================================");
+            Console.Clear();            
+            ExibirTituloDaOpcao("O que é Git e GitHub?");
             Console.WriteLine("\n=> GIT - é um sistema de versionamento: " +
-                "\n\nVocê controla as modificações de um projeto por meio de versões chamadas \"commits\".");
-            Console.WriteLine("\n====================================================================================================================\n");
-
+                "\n\nVocê controla as modificações de um projeto por meio de versões chamadas \"commits\".");            
             Console.WriteLine("\n=> Github - É um serviço online de hospedagem de repositórios Git remotos.");
             Console.WriteLine("\n Possui uma interface gráfica web: github.com");
             Console.WriteLine("\t * É uma plataforma social (usuários, página de perfil, seguidores, colaboração, etc.). Dica: currículo!");
             Console.WriteLine("\t * Maior serviço do mundo de hospedagem de projetos de código aberto.");
             Console.WriteLine("\t * Modelo de cobrança: gratuito para projetos de código aberto e para projetos privados.");
-            Console.WriteLine("\t * Alternativas: BitBucket, GitLab, etc.");
-            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\t * Alternativas: BitBucket, GitLab, etc.\n");
+            
             LimparTela();
             ExibirMenu();
         }
@@ -202,11 +200,11 @@ namespace curso.POO.AnotacoesSecao08
         public static void VerHistoricoOuMostrarDiferenca()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("git log");//Verificando o histórico de versões
-            Console.WriteLine("git log --oneline");//Listagem resumida
-            Console.WriteLine("\ngit diff");//Comando que mostra a diferença entre arquivos modificados
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Histórico de versões e ver a diferença entre arquivos");
+            Console.WriteLine("Verificando o histórico de versões: \n\n\tgit log");            
+            Console.WriteLine("\n\nListagem resumida: \n\n\tgit log --oneline");
+            Console.WriteLine("\n\nComando que mostra a diferença entre arquivos modificados: \n\n\tgit diff");
+            Console.WriteLine("\n\nMostra com detalhes todas as mudanças realizadas: \n\n\tgit show");
             LimparTela();
             ExibirMenu();
         }
@@ -223,7 +221,54 @@ namespace curso.POO.AnotacoesSecao08
             LimparTela();
             ExibirMenu();
         }
+        //case9
+        public static void ComoDesfazerModificaçõesNaoSalvas()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("git status");
+            Console.WriteLine("git reset");
+            Console.WriteLine("git clean -df");
+            Console.WriteLine("git checkout --");
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case10
+        public static void ComoUsarEditorVIM()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\nHabilitar o modo de edição: \t i ");
+            Console.WriteLine("\nSair do VIM, salvando as alterações:");
+            Console.WriteLine("\t<ESC> :wq <ENTER> ");
+            Console.WriteLine("\n\nSair do VIM, descartando as alterações: ");
+            Console.WriteLine("\t<ESC> :q! <ENTER>");
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case11
+        public static void ComoDesfazerUltimoCommit()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\nDesfazer último commit sem desfazer as modificações nos arquivos:\n");          
+            Console.WriteLine("\tgit status");            
+            Console.WriteLine("\tgit reset --soft HEAD~1");
+            Console.WriteLine("\n====================================================================================================================");
+            LimparTela();
+            ExibirMenu();
+        }
 
+        public static void ExibirTituloDaOpcao(string titulo)
+        {
+            int quantidadeDeLetras = titulo.Length;
+            string asteriscos = string.Empty.PadLeft(quantidadeDeLetras * 2, '*');
+            Console.WriteLine($"{asteriscos}");
+            Console.WriteLine($"\n\t{titulo}\n");
+            Console.WriteLine($"{asteriscos}\n");
+        }
         public static void LimparTela()
         {
             Console.Write("\n\nAperte uma tecla para continuar...");
