@@ -25,6 +25,16 @@ internal class Enumeracoes
 
         Console.WriteLine(order);
 
+        //Para o tipo original: use casting
+
+        //mostra o valor do status 2 
+        OrderStatus os1 = (OrderStatus)2;
+        Console.WriteLine($"\n{os1}");
+
+        //mostra o enum correspondente
+        int n1 = (int)OrderStatus.Processing;
+        Console.WriteLine($"\n{n1}");
+
         //convertendo um tipo enum em string
 
         string enumParaString = OrderStatus.PendingPayment.ToString();
