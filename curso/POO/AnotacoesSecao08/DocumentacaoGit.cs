@@ -83,19 +83,19 @@ namespace curso.POO.AnotacoesSecao08
                         break;
 
                     case 12:
-                        Console.WriteLine("Criar opção");
+                        ComoDeletarCommitsModificacoes();
                         break;
 
                     case 13:
-                        Console.WriteLine("Criar opção");
+                        ComoAtualizarRepositorioLocal();
                         break;
 
                     case 14:
-                        Console.WriteLine("Criar opção");
+                        ComoResolverPushRejeitado();
                         break;
 
                     case 15:
-                        Console.WriteLine("Criar opção");
+                        ApontarParaOutroRepoRemoto();
                         break;
                     case 16:
                         Console.Write("\n\n\tSaindo do sistema...");
@@ -109,6 +109,7 @@ namespace curso.POO.AnotacoesSecao08
                 }
             }
         }
+
         //case1
         public static void TextoExplicativoGitGithub()
         {
@@ -129,10 +130,10 @@ namespace curso.POO.AnotacoesSecao08
         public static void ConfigurarIdentificacaoGit()
         {
             Console.Clear();
-            ExibirTituloDaOpcao("\nConfigurando sua identificação no Git:\n");
+            ExibirTituloDaOpcao("Configurando sua identificação no Git:");
             Console.WriteLine("\tgit config --global user.name \"Seu nome\"");
-            Console.WriteLine("\tgit config --global user.email \"Seu email de cadastro do GitHub\"");
-            Console.WriteLine("\tgit config --list");            
+            Console.WriteLine("\n\tgit config --global user.email \"Seu email de cadastro do GitHub\"");
+            Console.WriteLine("\n\tgit config --list");            
             LimparTela();
             ExibirMenu();
         }
@@ -140,7 +141,7 @@ namespace curso.POO.AnotacoesSecao08
         public static void ConfigurarChaveSSHGithub()
         {
             Console.Clear();
-            ExibirTituloDaOpcao("\nConfigurar chave SSH para o Github:\n");
+            ExibirTituloDaOpcao("Configurar chave SSH para o Github:");
             Console.WriteLine("\t * SSH é um protocolo para comunicação de dados com segurança.");
             Console.WriteLine("\t * O Github aboliu a autenticação somente com usuário e senha.");
             Console.WriteLine("\t * A ideia básica é cadastrar previamente quais computadores podem acessar o Github em seu nome. \n" +
@@ -155,7 +156,7 @@ namespace curso.POO.AnotacoesSecao08
             Console.Clear();
             ExibirTituloDaOpcao("Salvar 1ª versão do projeto");
             Console.WriteLine("\nInicializa o git no repositório local: \n\n\tgit init");
-            Console.WriteLine("\n\nadiciona todos os arquivos criados ou alterados: \n\n\tgit add .");
+            Console.WriteLine("\n\nAdiciona todos os arquivos criados ou alterados: \n\n\tgit add .");
             Console.WriteLine("\n\nArmazena o conteúdo atual do índice em um novo commit, " +
                 "\njuntamente com uma mensagem de registro do usuário que descreve as mudanças:");
             Console.WriteLine("\n\tgit commit -m \"Mensagem explicativa\"");
@@ -170,7 +171,7 @@ namespace curso.POO.AnotacoesSecao08
         {
             Console.Clear();
             ExibirTituloDaOpcao("Salvando uma nova versão do projeto");            
-            Console.WriteLine("\nVerificando o status - Lista e mostra quais arquivos estão em quais estados :" +
+            Console.WriteLine("\nVerificando o status - Lista e mostra quais arquivos estão em quais estados:" +
                 "\n\n\tgit status");
             Console.WriteLine("\n\nPara monitorar um ou mais novos arquivos:" +
                 "\n\n\tgit add .");
@@ -182,7 +183,7 @@ namespace curso.POO.AnotacoesSecao08
             ExibirMenu();
         }
         //case6
-        public static void ClonarModificarProjeto()
+        public static void ClonarModificarProjeto() 
         {
             Console.Clear();
             ExibirTituloDaOpcao("Clonar ou modificar o projeto de um repositório");
@@ -225,12 +226,11 @@ namespace curso.POO.AnotacoesSecao08
         public static void ComoDesfazerModificaçõesNaoSalvas()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
-            Console.WriteLine("git status");
-            Console.WriteLine("git reset");
-            Console.WriteLine("git clean -df");
-            Console.WriteLine("git checkout --");
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Como desfazer modificações não salvas");
+            Console.WriteLine("\n\tgit status");
+            Console.WriteLine("\n\tgit reset");
+            Console.WriteLine("\n\tgit clean -df");
+            Console.WriteLine("\n\tgit checkout --");            
             LimparTela();
             ExibirMenu();
         }
@@ -238,13 +238,12 @@ namespace curso.POO.AnotacoesSecao08
         public static void ComoUsarEditorVIM()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("O que fazer quando abre o editor VIM");
             Console.WriteLine("\nHabilitar o modo de edição: \t i ");
             Console.WriteLine("\nSair do VIM, salvando as alterações:");
             Console.WriteLine("\t<ESC> :wq <ENTER> ");
             Console.WriteLine("\n\nSair do VIM, descartando as alterações: ");
             Console.WriteLine("\t<ESC> :q! <ENTER>");
-            Console.WriteLine("\n====================================================================================================================");
             LimparTela();
             ExibirMenu();
         }
@@ -252,11 +251,57 @@ namespace curso.POO.AnotacoesSecao08
         public static void ComoDesfazerUltimoCommit()
         {
             Console.Clear();
-            Console.WriteLine("\n====================================================================================================================");
+            ExibirTituloDaOpcao("Como desfazer o último commit");
             Console.WriteLine("\nDesfazer último commit sem desfazer as modificações nos arquivos:\n");          
             Console.WriteLine("\tgit status");            
-            Console.WriteLine("\tgit reset --soft HEAD~1");
-            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("\n\tgit reset --soft HEAD~1");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case12
+        public static void ComoDeletarCommitsModificacoes()
+        {
+            Console.Clear();
+            ExibirTituloDaOpcao("Como deletar commits e também modificações nos arquivos");
+            Console.WriteLine("\nVoltar o projeto ao estado de um dado commit "+
+                "\n(deletar commits e alterações posteriores a esse commit):\n");
+            Console.WriteLine("\tgit status");
+            Console.WriteLine("\n\tgit reset --hard <código do commit>");
+            Console.WriteLine("\n\nVoltar o projeto ao estado do penúltimo commit: " +
+                "\n\n\tgit status" +
+                "\n\n\tgit reset --hard HEAD~1");
+            Console.WriteLine("\n\t\t==> AÇÃO DESTRUTIVA!!! <==");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case13
+        public static void ComoAtualizarRepositorioLocal()
+        {
+            Console.Clear();
+            ExibirTituloDaOpcao("Como deletar commits e também modificações nos arquivos");
+            Console.WriteLine("\n\tgit status " +
+                "\n\n\tgit pull <nome do remote> <nome do branch>");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case14
+        public static void ComoResolverPushRejeitado()
+        {
+            Console.Clear();
+            ExibirTituloDaOpcao("Como resolver push rejeitado");
+            Console.WriteLine("Não é permitido enviar um push se seu repositório local " +
+                "\nestá atrasado em relação ao histórico do repositório remoto!");
+            Console.WriteLine("\nVocê tem que atualizar o repositório local:");
+            Console.WriteLine("\n\n\tgit pull <nome do remote> <nome do branch>");
+            LimparTela();
+            ExibirMenu();
+        }
+        //case15
+        public static void ApontarParaOutroRepoRemoto()
+        {
+            Console.Clear();
+            ExibirTituloDaOpcao("Como apontar o projeto para outro repositório remoto");
+            Console.WriteLine("\n\n\tgit remote set-url origin git@github.com:seuusuario/seurepositorio.git");
             LimparTela();
             ExibirMenu();
         }
