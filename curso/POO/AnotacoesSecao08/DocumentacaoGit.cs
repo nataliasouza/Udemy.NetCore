@@ -1,6 +1,7 @@
 ﻿
 //Documentação Git e GitHub
 //Anotações para consulta dos comandos
+// Doc Oficial: https://comandosgit.github.io/
 
 namespace curso.POO.AnotacoesSecao08
 {
@@ -55,11 +56,11 @@ namespace curso.POO.AnotacoesSecao08
                             break;
 
                         case "4":
-                            Console.WriteLine("Criar opção");
+                            SalvarPrimeiraVersao();
                             break;
 
                         case "5":
-                            Console.WriteLine("Criar opção");
+                            SalvarNovaVersao();
                             break;
 
                         case "6":
@@ -153,6 +154,30 @@ namespace curso.POO.AnotacoesSecao08
             Console.WriteLine("\n====================================================================================================================");
             LimparTela();
             ExibirMenu();
+        }
+
+        public static void SalvarPrimeiraVersao()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("git init"); //inicializa o git no repositório local
+            Console.WriteLine("git add ."); // adiciona todos os arquivos criados ou alterados.
+            Console.WriteLine("git commit -m \"Mensagem explicativa\""); //Armazena o conteúdo atual do índice em um novo commit, juntamente com uma mensagem de registro do usuário que descreve as mudanças
+            Console.WriteLine("git branch -M main"); //Define a branch a ser usada
+            Console.WriteLine("git remote add origin git@github.com:seuusuario/seurepositorio.git");// adiciona o repositorio remoto
+            Console.WriteLine("git push -u origin main");//envia as modificações para o repositório remoto
+            Console.WriteLine("\n====================================================================================================================");
+        }
+
+        public static void SalvarNovaVersao()
+        {
+            Console.Clear();
+            Console.WriteLine("\n====================================================================================================================");
+            Console.WriteLine("git status");//exibe todas modificações
+            Console.WriteLine("git add .");
+            Console.WriteLine("git commit -m \"Mensagem explicativa\"");
+            Console.WriteLine("git push");
+            Console.WriteLine("\n====================================================================================================================");
         }
 
         public static void LimparTela()
