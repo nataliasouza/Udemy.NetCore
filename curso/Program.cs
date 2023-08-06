@@ -4,6 +4,7 @@ using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitiva;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaRepetitivaFor;
 using curso.LogicaProgramacao.ExerciciosPropostos.EstruturaSequencial;
 using curso.POO;
+using curso.POO.AnotacoesSecao08;
 using curso.POO.ExercicioFixacao;
 using curso.POO.ExerciciosSecao05;
 using curso.POO.ExerciciosSecao06;
@@ -124,9 +125,18 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"DateTime - Propriedades e operações com DateTime", OperacoesPropsDateTime.Executar},
                 {"DateTimeKind e padrão ISO 8601", ExercicioDateTimeKind.Executar},
                 {"TimeSpan - Representando durações", Duracoes.Executar},
-                {"TimeSpan - Propriedades e Operações com TimeSpan", OperacoesPropsTimeSpan.Executar}                
+                {"TimeSpan - Propriedades e Operações com TimeSpan", OperacoesPropsTimeSpan.Executar},
                 
                 #endregion
-            });
+
+                #region "Git e Github"
+
+                // PROGRAMAÇÃO ORIENTADA A OBJETOS
+                // Nivelamento Git e Github.
+
+                {"Documentação: Anotaçoes sobre GIT - GITHUB", DocumentacaoGit.Executar}
+
+                #endregion
+});
 
 central.SelecionarEExecutar();
