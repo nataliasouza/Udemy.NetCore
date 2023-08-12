@@ -10,6 +10,7 @@ using curso.POO.ExerciciosSecao05;
 using curso.POO.ExerciciosSecao06;
 using curso.POO.ExerciciosSecao07;
 using curso.POO.ExerciciosSecao09.Enumeradores;
+using curso.POO.ExerciciosSecao09.Exercicio01;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -23,7 +24,7 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 {"Exercício Bhaskara - Recapitulando Lógica de Programação", Bhaskara.Executar},              
                 {"Exercício Split - Recapitulando Lógica de Programação", SplitPalavras.Executar},             
                 {"Exercício Split Parte 2 - Recapitulando Lógica de Programação", SplitParte2.Executar},
-                {"- Estrutura Sequencial - Exercicio Fixacao", ExercicioFixacaoSequencial.Executar},
+                {"- Estrutura Sequencial - ExercicioComposicao01 Fixacao", ExercicioFixacaoSequencial.Executar},
                 {"- Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1003 - Exercício 1", Sequencial01.Executar},
                 {"- Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1002 - Exercício 2", Sequencial02.Executar},
                 {"- Estrutura Sequencial - Exercícios Propostos Parte 1 - uri1007 - Exercício 3", Sequencial03.Executar},
@@ -143,7 +144,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // PROGRAMAÇÃO ORIENTADA A OBJETOS
                 // Capítulo: Enumerações, composição.
 
-                {"Exercício Enumerações (enum)", Enumeracoes.Executar}
+                {"Exercício Enumerações (enum)", Enumeracoes.Executar},
+                {"Exercício 01 - Ler dados de um trabalhado", ExercicioComposicao01.Executar}
 
                 #endregion
 });
