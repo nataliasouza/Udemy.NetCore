@@ -11,6 +11,7 @@ using curso.POO.ExerciciosSecao06;
 using curso.POO.ExerciciosSecao07;
 using curso.POO.ExerciciosSecao09.Enumeradores;
 using curso.POO.ExerciciosSecao09.Exercicio01;
+using curso.POO.ExerciciosSecao09.Exercicio02;
 using curso.POO.PrimeirosExercicios;
 
 var central = new CentralDeExercicios(new Dictionary<string, Action>() {
@@ -145,7 +146,8 @@ var central = new CentralDeExercicios(new Dictionary<string, Action>() {
                 // Capítulo: Enumerações, composição.
 
                 {"Exercício Enumerações (enum)", Enumeracoes.Executar},
-                {"Exercício 01 - Ler dados de um trabalhado", ExercicioComposicao01.Executar}
+                {"Exercício 01 - Ler dados de um trabalhador", ExercicioComposicao01.Executar},
+                {"Exercício 02 - StringBuilder", ExercicioStringBuilder.Executar}
 
                 #endregion
 });

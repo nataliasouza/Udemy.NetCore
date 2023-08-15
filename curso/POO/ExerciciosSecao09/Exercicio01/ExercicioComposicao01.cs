@@ -2,7 +2,6 @@
 //Depois, solicitar do usuário um mês e mostrar qual foi o salário do funcionário
 //nesse mês, conforme exemplo (próxima página).
 
-using curso.POO.ExerciciosSecao09.Enumeradores.Entities;
 using curso.POO.ExerciciosSecao09.Exercicio01.entities.enums;
 using curso.POO.ExerciciosSecao09.Exercicio01.entities;
 using System.Globalization;
