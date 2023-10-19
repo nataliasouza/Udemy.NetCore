@@ -3,8 +3,9 @@
 
 :spiral_calendar: Atualizado em 15 de agosto de 2023.
 
-⚠️ Seção 01 até 09 está concluído! (Parte 01).⚠️<br>
+⚠️ Seção 01 até 09 [Concluído] (Parte 01).⚠️<br>
 :construction: Seção 10 até 17 está em construção (Parte 02).:construction:<br>
+⚠️ Seção 18 - Projeto Final: Sistema Web com ASP .NET Core MVC e EF. [Concluído] ⚠️
 
 ##### DESCRIÇÃO:
 
@@ -43,7 +44,7 @@ Seção 9. Enumerações e composição.
 </details>
 
 <details>
-  <summary> <b> Parte 2 - Seção 10 até 17 </b> <i>(clique na setinha!)</i> :warning: Estou aqui! :warning:</summary><br>
+  <summary> <b> Parte 2 - Seção 10 até 17 </b> <i>(clique na setinha!)</i> :warning: Em Andamento! :warning:</summary><br>
 
 *Repositório Parte 2 - Branch master*
 
@@ -62,7 +63,7 @@ Seção 13. Trabalhando com arquivos.
 
 Seção 14. Interfaces.
 
-Seção 15. Generics, Set, Dictionary.
+Seção 15. Generics, Set, Dictionary. ⚠️Estou Aqui⚠️
 
 Seção 16. Tópicos especiais em C# - Parte 2.
 
@@ -73,11 +74,11 @@ Seção 17. Expressões Lambda, Delegates, LINQ.
 </details>
 
 <details>
-  <summary> <b> Parte 3 - Projeto Final </b> <i>(clique na setinha!)</i> </summary><br>
+  <summary> <b> Parte 3 - Projeto Final</b> <i>(clique na setinha!)</i> - Finalizado. </summary><br>
 
-Seção 18. Projeto: Sistema Web com ASP .NET Core MVC e EF.
+Seção 18. Projeto: Sistema Web com ASP .NET Core MVC e EF. 
 
-*Repositório Parte 3 - Branch master* (Em andamento)
+*Repositório Parte 3 - Branch master* 
 
 ```bash
 https://github.com/nataliasouza/mysalles
